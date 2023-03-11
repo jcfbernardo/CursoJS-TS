@@ -61,3 +61,8 @@ form button:hover {
 .timer {
     font-size: 3em;
 }
+
+.pausado {
+    color: red;
+    font-weight: bolder;
+}

@@ -21,20 +21,20 @@ function mostraHora() {
 }
 
 iniciar.addEventListener('click', () => {
-    temporizador.style.color = 'black';
+    temporizador.classList.remove('pausado');
     clearInterval(intervalo);
     intervalo = setInterval(mostraHora, 1000);
 });
 
 pausar.addEventListener('click', () => {
-    temporizador.style.color = 'red';
+    temporizador.classList.add('pausado');
     setTimeout(function () {
         clearInterval(intervalo);
     }, 10);
 });
 
 zerar.addEventListener('click', () => {
-    temporizador.style.color = 'black';
+    temporizador.classList.remove('pausado');
     clearInterval(intervalo);
     temporizador.textContent = '00:00:00';
     segundos = 0;
