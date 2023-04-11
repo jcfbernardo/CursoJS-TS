@@ -41,4 +41,4 @@ function calculaCpf(cpfArray) {
     }
 }
 
-console.log((cpf('070.987.720')));
+console.log((cpf('705.484.450')));
