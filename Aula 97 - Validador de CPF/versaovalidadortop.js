@@ -7,7 +7,7 @@ function ValidaCPF(cpfEnviado) {
     });
   }
   
-  ValidaCPF.prototype.valida = function() {
+  ValidaCPF.prototype.valida =  function() {
     if(typeof this.cpfLimpo === 'undefined') return false;
     if(this.cpfLimpo.length !== 11) return false;
     if(this.isSequencia()) return false;
