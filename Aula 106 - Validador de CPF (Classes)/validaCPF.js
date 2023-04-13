@@ -47,11 +47,3 @@ class ValidaCPF {
     return digito > 9 ? "0" : String(digito);
   }
 }
-
-const cpf1 = new ValidaCPF('106.402.984-19');
-
-if (cpf1.valida(cpf1._cpf)) {
-  console.log("CPF válido.");
-} else {
-  console.log("CPF inválido.");
-}
